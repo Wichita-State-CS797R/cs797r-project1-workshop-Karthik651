@@ -1,0 +1,1 @@
+C:\Users\Saketh\Downloads\dotnet-maui-workshop-main (1)\dotnet-maui-workshop-main\Part 1 - Displaying Data\MonkeyFinder\MonkeyFinder.csproj;x64
