@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Saketh\\Downloads\\dotnet-maui-workshop-main (1)\\dotnet-maui-workshop-main\\Part 1 - Displaying Data\\MonkeyFinder\\MonkeyFinder.csproj": {}
+    "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\MonkeyFinder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Saketh\\Downloads\\dotnet-maui-workshop-main (1)\\dotnet-maui-workshop-main\\Part 1 - Displaying Data\\MonkeyFinder\\MonkeyFinder.csproj": {
+    "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\MonkeyFinder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Saketh\\Downloads\\dotnet-maui-workshop-main (1)\\dotnet-maui-workshop-main\\Part 1 - Displaying Data\\MonkeyFinder\\MonkeyFinder.csproj",
+        "projectUniqueName": "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\MonkeyFinder.csproj",
         "projectName": "MonkeyFinder",
-        "projectPath": "C:\\Users\\Saketh\\Downloads\\dotnet-maui-workshop-main (1)\\dotnet-maui-workshop-main\\Part 1 - Displaying Data\\MonkeyFinder\\MonkeyFinder.csproj",
+        "projectPath": "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\MonkeyFinder.csproj",
         "packagesPath": "C:\\Users\\Saketh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Saketh\\Downloads\\dotnet-maui-workshop-main (1)\\dotnet-maui-workshop-main\\Part 1 - Displaying Data\\MonkeyFinder\\obj\\",
+        "outputPath": "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -60,10 +60,6 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -83,10 +79,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -240,10 +232,6 @@
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -263,10 +251,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -353,10 +337,6 @@
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -376,10 +356,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
@@ -467,10 +443,6 @@
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041",
           "dependencies": {
-            "CommunityToolkit.Mvvm": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[7.0.0, )",
@@ -490,10 +462,6 @@
               "target": "Package",
               "version": "[7.0.0, )",
               "autoReferenced": true
-            },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",

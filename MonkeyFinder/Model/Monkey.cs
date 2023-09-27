@@ -8,5 +8,5 @@ public class Monkey
 
     public string Age { get; set; }
 
-    public string Location { get; set; }
+   
 }

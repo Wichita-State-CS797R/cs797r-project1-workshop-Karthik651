@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "hTs48GOxFjpFnY+/UJCfOq7sOUj7Bh/UVX+JE6wu2LMB6/7wJuVgCo7KRUdbbEJQkLju1Udjvl5cHcCuckybxA==",
+  "dgSpecHash": "vQHyDc5gAb5BZQ60QE0tvqyUwZwd7vPqjI5nNa+xHxtIHEzh65AP2w7MCRZx6QTQxCvbGss9Ud1E7eq8mlhBeA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Saketh\\Downloads\\dotnet-maui-workshop-main (1)\\dotnet-maui-workshop-main\\Part 1 - Displaying Data\\MonkeyFinder\\MonkeyFinder.csproj",
+  "projectFilePath": "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\MonkeyFinder.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Saketh\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -12,7 +11,6 @@
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.logging.debug\\7.0.0\\microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.5.1\\microsoft.graphics.win2d.1.0.5.1.nupkg.sha512",
@@ -141,47 +139,5 @@
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.11\\microsoft.netcore.app.runtime.win-x64.7.0.11.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.maui.controls.runtime.win\\7.0.92\\microsoft.maui.controls.runtime.win.7.0.92.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "MonkeyFinder depends on CommunityToolkit.Mvvm (>= 8.2.0) but CommunityToolkit.Mvvm 8.2.0 was not found. An approximate best match of CommunityToolkit.Mvvm 8.2.1 was resolved.",
-      "libraryId": "CommunityToolkit.Mvvm",
-      "targetGraphs": [
-        "net7.0-android33.0",
-        "net7.0-android33.0/android-arm",
-        "net7.0-android33.0/android-arm64",
-        "net7.0-android33.0/android-x64",
-        "net7.0-android33.0/android-x86",
-        "net7.0-android33.0/iossimulator-x64",
-        "net7.0-android33.0/maccatalyst-x64",
-        "net7.0-android33.0/win10-x64",
-        "net7.0-ios16.1",
-        "net7.0-ios16.1/android-arm",
-        "net7.0-ios16.1/android-arm64",
-        "net7.0-ios16.1/android-x64",
-        "net7.0-ios16.1/android-x86",
-        "net7.0-ios16.1/iossimulator-x64",
-        "net7.0-ios16.1/maccatalyst-x64",
-        "net7.0-ios16.1/win10-x64",
-        "net7.0-maccatalyst16.1",
-        "net7.0-maccatalyst16.1/android-arm",
-        "net7.0-maccatalyst16.1/android-arm64",
-        "net7.0-maccatalyst16.1/android-x64",
-        "net7.0-maccatalyst16.1/android-x86",
-        "net7.0-maccatalyst16.1/iossimulator-x64",
-        "net7.0-maccatalyst16.1/maccatalyst-x64",
-        "net7.0-maccatalyst16.1/win10-x64",
-        "net7.0-windows10.0.19041",
-        "net7.0-windows10.0.19041/android-arm",
-        "net7.0-windows10.0.19041/android-arm64",
-        "net7.0-windows10.0.19041/android-x64",
-        "net7.0-windows10.0.19041/android-x86",
-        "net7.0-windows10.0.19041/iossimulator-x64",
-        "net7.0-windows10.0.19041/maccatalyst-x64",
-        "net7.0-windows10.0.19041/win10-x64"
-      ]
-    }
-  ]
+  "logs": []
 }
