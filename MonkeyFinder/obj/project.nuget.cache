@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vQHyDc5gAb5BZQ60QE0tvqyUwZwd7vPqjI5nNa+xHxtIHEzh65AP2w7MCRZx6QTQxCvbGss9Ud1E7eq8mlhBeA==",
+  "dgSpecHash": "nB2CegpUV7Fjyj5SQ6kFBWnVTfI1ibrJf2CDTK3GQ5GKR88cIs+tZ9MI7p0XLfdpY3UBq+NX9MTNKrpZ6cHHRg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Saketh\\OneDrive\\Desktop\\Project\\cs797r-project1-workshop-Karthik651\\MonkeyFinder\\MonkeyFinder.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Saketh\\.nuget\\packages\\communitytoolkit.highperformance\\8.2.1\\communitytoolkit.highperformance.8.2.1.nupkg.sha512",
+    "C:\\Users\\Saketh\\.nuget\\packages\\communitytoolkit.maui.core\\6.0.0\\communitytoolkit.maui.core.6.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
@@ -20,6 +22,7 @@
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\Saketh\\.nuget\\packages\\system.speech\\7.0.0\\system.speech.7.0.0.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\Saketh\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",
