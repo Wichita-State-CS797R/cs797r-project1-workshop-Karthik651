@@ -1,153 +1,40 @@
-## Hands-on Lab Part 1: 顯示出資料
+# .NET MAUI 的 Hands-on Lab 手冊
 
-在此部分的 Hands-on Lab 要完成的，是要讓大家在對於 .NET MAUI 專案結構有初步了解後，開始進入撰寫程式的部分，並且看看如何在透過 CollectionView 的列表控制項中顯示出資料。
+今天我們將會透過 [.NET MAUI](https://docs.microsoft.com/dotnet/maui?WT.mc_id=EM-MVP-5001645) 技術建構出一個跨平台執行的應用程式，它將會透過列表的方式來展示來自世界各地的猴子資料。首先我們將從使用網際網路服務的應用邏輯開始，此服務會以 RESTful API 的方式來回應用 json 格式表示的猴子資料。接著，在此 [.NET MAUI](https://docs.microsoft.com/xamarin/essentials/index?WT.mc_id=EM-MVP-5001645) 的應用程式中，透過 [.NET MAUI](https://docs.microsoft.com/xamarin/essentials/index?WT.mc_id=EM-MVP-5001645) 所設計的 API 使用，來撰寫搜尋如何計算與搜尋到當前距離最近的猴子，並透過 API 從此應用程式轉跳到平台裝置內建的地圖應用來呈現來展示猴子所在的地點。當然也將會學到更多利用不同的方式來呈現資料，並在最後學習到讓應用程式如何自動適應系統佈景主題的深色或淺色模式的調整處理。
 
-### 在 Visual Studio 中開啟解決方案
+## Hands-on Lab 環境設定
+操作此 Hands-on Lab 是需要自己實際動手與設定相關設備的。您將可以在 PC（推薦）或 Mac 上進行開發，您需要做的就是先安裝好在 Visual Studio 2022 或 Visaul Studio for Mac 2022，並確認有設定 .NET MAUI 工作負載的安裝。
 
-1. 開啟 **Part 1 - Displaying Data/MonkeyFinder.sln**
+在開始著手進行此 Hands-on Lab 前，會建議先用 10 分鐘左右的時間來閱讀一下 [.NET MAUI 教學](https://docs.microsoft.com/dotnet/maui/get-started/first-app?WT.mc_id=EM-MVP-5001645)，在此教學中會指導您安裝與正確地設置好，要進行此 Hands-on Lab 所需的開發環境。
 
-此 MonkeyFinder 包含 1 個專案：
+如果您是行動應用開發的新手，會建議您直接把應用程式直接部署到 Android 實體裝置中 (通常只需幾個步驟就可以完成相關的設置) 進行測試。當然，如果您沒有 Android 的實體裝置可以使用，也不用擔心，可以透過設定 [具有硬體加速功能的 Android 模擬器](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator?WT.mc_id=EM-MVP-5001645) 的方式來使用模擬器進行測試。而如果真的沒有時間能提前準備好相關的設定，也沒關係的，在此 Hands-on Lab 的進行過程中，都會盡可能的有相關的對應提示和可能幫助介紹。
 
-* MonkeyFinder 專案 - 基於 .NET MAUI 針對 Android、iOS、macOS 和 Windows 的跨平台應用程式的主要專案。它包括應用程式開發所需要的所有部分（Models、Views、ViewModels 和 Services ）。
+## Hands-on Lab 各個 Part 內容
 
-![MonkeyFinder 解決方案的專案結構](../Art/Solution.PNG)
+有關此 Hands-on Lab 的各個 Part 內容介紹：
 
-**MonkeyFinder 專案** 也包括了在 Hands-on Lab 的過程當中將使用到的空白程式碼檔與 XAML 的頁面文件檔。在進行 Hands-on Lab 的時候，都將會透過專案當中的這些檔案直接修改有關的程式碼。
+* [Hands-on Lab Part 0: 約 30 分鐘的環節](Part%200%20-%20Overview/README.zh-tw.md) - 有關 .NET MAUI 的基本知識與其開發環境的安裝介紹 
+* [Hands-on Lab Part 1: 呈現出資料](Part%201%20-%20Displaying%20Data/README.zh-tw.md) - 實作單頁資料呈現列表
+* [Hands-on Lab Part 2: MVVM 和資料繫結](Part%202%20-%20MVVM/README.zh-tw.md) - MVVM 框架設計和資料繫結
+* [Hands-on Lab Part 3: 增加巡覽功能](Part%203%20-%20Navigation/README.zh-tw.md) - 幫 App 增加巡覽功能進行頁面轉跳
+* [Hands-on Lab Part 4: 了解平台特性](Part%204%20-%20Platform%20Features/README.zh-tw.md) - 實現不同平台的特定功能
+* [Hands-on Lab Part 5: 幫 CollectionView 增加下拉更新](Part%205%20-%20CollectionView/README.zh-tw.md) - 增加下拉更新資料功能並學習 CollectionView 多資料呈現控制項的使用技巧
+* [Hands-on Lab Part 6: 設定 App 的佈景主題](Part%206%20-%20AppThemes/README.zh-tw.md) - 有關 App 如何針對淺色/深色模式的處理佈景主題的設置
 
-### 進行 NuGet 套件還原
 
-Hands-on Lab 的專案已經都設定好所需引用的 Nuget 套件，因此在 Hands-on Lab 的過程中無須再安裝其他 Nuget 套件。唯一要做的一件事情就是在第一次使用此 Hands-on Lab 的專案時需要還原 Nuget 套件的引用(需透過網際網路連到 nuget.org 進行下載)。
+要開始進行此 Hands-on Lab，請開啟「Part 1 - Displaying Data」資料夾並開啟 「MonkeyFinder.sln」。可以在整個 Hands-on Lab 進行的過程中持續的使用此一開始的專案。而為確保每個階段的進行，除了在 **Hands-on Lab 的 Part** 都有一個 **README** 文件，有對 Hands-on Lab 在此 Part 的過程中進行內容的說明。同時，也在任何一個 Part 的資料夾當中，都找到對應該個 Part 的專案程式，您也可以直接開啟該 Part 資料夾中的專案，來開始進行此 Part 要完成的內容，然後在透過下一個 Part 的專案來確認完成後應有的結果。
 
-1. 在 MonkeyFinder 的解決方案上的 **右鍵選單** 選項中選擇 **Restore NuGet packages** 。
+## 教學影片
+James Montemagno 已有錄製大約 4 小時有關此 Hands-on Lab 的 Step by Step 教學影片，各位捧友們可以到 [James Montemagno 的 YouTube 频道](https://youtube.com/jamesmontemagno) 觀看學習
 
-![還原 NuGets](../Art/RestoreNuGets.PNG)
+## 更多連結和資源：
+- [.NET MAUI 官方網站](https://dot.net/maui)
+- [Microsoft Learn 上的 .NET MAUI 的學習路徑](https://aka.ms/Learn.MAUI)
+- [.NET MAUI 官方文件](https://aka.ms/Docs.MAUI)
+- [GitHub 上的 .NET MAUI 專案](https://github.com/dotnet/maui)
+- [.NET 初心者的入門系列影片集](https://dot.net/videos)
 
-### 建立 Model 紀錄資料描述
 
-此 Hands-on Lab 當中將下載有關猴子的資料，所以在應用程式當中需要設計一個類別來記錄它的資料描述。
+如果您有任何問题，也可以到 Twitter 上與 [@JamesMontemagno](https://twitter.com/jamesmontemagno) 聯繫，也可到 Facebook 的 [Xamarin Asia Developers 社群](https://www.facebook.com/groups/XamarinAsiaDevelopers/) 來提問。
 
-![將 json 轉換成 c# 類別](../Art/Convert.PNG)
 
-可以透過使用 [json2csharp.com](https://json2csharp.com) 來轉換位於 [montemagno.com/monkeys.json](https://montemagno.com/monkeys.json) 的原始 json 資料，並將此原始的 json 資料貼入左邊的輸入框後，也確定上方介面中轉換的選項有選成 **json to C#** 之後，即可點選 **Convert** 來進行轉換。  
-
-而所產生出 C# 的類別，除了要確認此類別的名稱有被正確設定成 `Monkey` 之外，也要確認此類別的命名空間是設定 `MonkeyFinder.Model` 之後，再進行該類別檔案的下載。  
-
-但如同前面所述，此 Hands-on Lab 當中所準備的專案中，都已經有先建立好所需的空白類別檔，所以只需要圈選 json2csharp 所協助轉換成的 C# 類別中 `Auto 屬性` 這個部分的程式碼後複製，即可直接到專案當中進行下面動作。
-
-1. 開啟 `Model/Monkey.cs` 檔案。
-2. 在 `Monkey.cs` 類別當中, 貼上剛剛在 json2csharp 服務當中所複製的程式碼。  
-  
-完成後如下結果:
-
-```csharp
-public class Monkey
-{        
-    public string Name { get; set; } 
-    public string Location { get; set; } 
-    public string Details { get; set; } 
-    public string Image { get; set; } 
-    public int Population { get; set; } 
-    public double Latitude { get; set; } 
-    public double Longitude { get; set; } 
-}
-```
-
-Additionally, because we will be using `System.Text.Json` to deserialize the data, we will want to add a `MonkeyContext` that will dynamically generate code for better performance. The following code will enable this and we will use it in the future.
-
-```csharp
-[JsonSerializable(typeof(List<Monkey>))]
-internal sealed partial class MonkeyContext : JsonSerializerContext
-{
-
-}
-```
-
-### 顯示出資料
-
-接著將可以在 `MainPage.xaml` 的 `CollectionView` 當中顯示出經過特殊定義而對應類型的任何資料。所以只要透過設定 `ItemTemplate` 就能設置基本的控制項(如: Image、Label...等)，來建立使用者介面呈現資料。
-
-首先，找到在 `MainPage.xaml` 檔案一開始的 ContentPage 標記，並在該標記中多增加一個新的命名空間引用的撰寫：
-
-```xml
-xmlns:model="clr-namespace:MonkeyFinder.Model"
-```
-
-以便在後續的 XAML 撰寫可以使用到前一段所做好的 Monkey 類別，並且在也可以透過 Binding 來完成資料繫結。
-
-接著，將下面的 XAML 內容加到 MainPage.xaml 的 `ContentPage` 成對標記當中：
-
-```xml
-<CollectionView>
-    <CollectionView.ItemsSource>
-        <x:Array Type="{x:Type model:Monkey}">
-            <model:Monkey
-                Name="Baboon"
-                Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"
-                Location="Africa and Asia" />
-            <model:Monkey
-                Name="Capuchin Monkey"
-                Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg"
-                Location="Central and South America" />
-            <model:Monkey
-                Name="Red-shanked douc"
-                Image="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg"
-                Location="Vietnam" />
-        </x:Array>
-    </CollectionView.ItemsSource>
-    <CollectionView.ItemTemplate>
-        <DataTemplate x:DataType="model:Monkey">
-            <HorizontalStackLayout Padding="10">
-                <Image
-                    Aspect="AspectFill"
-                    HeightRequest="100"
-                    Source="{Binding Image}"
-                    WidthRequest="100" />
-                <Label VerticalOptions="Center" TextColor="Gray">
-                    <Label.Text>
-                        <MultiBinding StringFormat="{}{0} | {1}">
-                            <Binding Path="Name" />
-                            <Binding Path="Location" />
-                        </MultiBinding>
-                    </Label.Text>
-                </Label>
-            </HorizontalStackLayout>
-        </DataTemplate>
-    </CollectionView.ItemTemplate>
-</CollectionView>
-```
-
-如果想將兩個串文字垂直呈現，可以將兩個 `Label` 控制項包在由 `VerticalStackLayout` 組成的成對標記當中，並在兩個 `Label` 控制項當中，來透過設定字體大小 (FontSize) 的屬性來讓文字在顯示有差異化的效果：
-
-```xml
- <HorizontalStackLayout Padding="10">
-    <Image
-        Aspect="AspectFill"
-        HeightRequest="100"
-        Source="{Binding Image}"
-        WidthRequest="100" />
-    <VerticalStackLayout VerticalOptions="Center">
-        <Label Text="{Binding Name}" FontSize="24" TextColor="Gray"/>
-        <Label Text="{Binding Location}" FontSize="18" TextColor="Gray"/>
-    </VerticalStackLayout>
-</HorizontalStackLayout>
-```
-
-### 測試運作應用程式
-
-確認機器的環境都可以在不同平台與目標當中進行測試：
-
-* [有關 Android 模擬器的設定步驟](https://docs.microsoft.com/dotnet/maui/android/emulator/device-manager)
-* [在 Windows 中使用 .NET MAUI 開發的設定](https://docs.microsoft.com/dotnet/maui/windows/setup)
-
-1. 在 Visual Studio 中，透過選擇偵錯選單當中的下拉選單來變更 `架構` (Framework)，將 Android 或 Windows 應用程式設置為啟動專案
-
-![Visual Studio 偵錯選單當中顯示多個 架構 (Framework) ](../Art/SelectFramework.png)
-
-2. 在 Visual Studio 中點選 `偵錯` 按鈕或工具 -> 開始偵錯
-     - 如果有遇到任何問题，請參考執行時的設定指引
-
-執行的應用程式後呈現出三隻猴子的資料在列表當中的結果：
-
-![在 Android 上執行的應用程式並顯示三隻猴子的結果](../Art/CodedMonkeys.png)
-
-接著，繼續到 [Hands-on Lab Part 2 : MVVM 和資料繫結](../Part%202%20-%20MVVM/README.zh-tw.md) 中，學習如何使用資料繫結與 MVVM 框架。
