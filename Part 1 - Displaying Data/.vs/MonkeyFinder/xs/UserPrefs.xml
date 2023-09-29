@@ -3,29 +3,25 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.01BF1DB6-FD01-447E-91D2-336999CF81FF" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MonkeyFinder/Model/Monkey.cs">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_4_API_31" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonkeyFinder/View/MainPage.xaml">
     <Files>
       <File FileName="MonkeyFinder/MauiProgram.cs" Line="21" Column="1" />
-      <File FileName="MonkeyFinder/GlobalUsings.cs" Line="1" Column="1" />
-      <File FileName="MonkeyFinder/Model/Monkey.cs" Line="1" Column="1" />
+      <File FileName="MonkeyFinder/GlobalUsings.cs" />
+      <File FileName="MonkeyFinder/Model/Monkey.cs" Line="6" Column="2" />
+      <File FileName="MonkeyFinder/View/MainPage.xaml" Line="31" Column="69" />
+      <File FileName="MonkeyFinder/Model/MonkeyContext.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MonkeyFinder" expanded="True">
-            <Node name="MonkeyFinder" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Model" expanded="True">
-                <Node name="Monkey.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="MonkeyFinder" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.MonkeyFinder PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.01BF1DB6-FD01-447E-91D2-336999CF81FF" />
+  <MonoDevelop.Ide.ItemProperties.MonkeyFinder PreferredExecutionTarget="Android.Pixel_4_API_31" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
