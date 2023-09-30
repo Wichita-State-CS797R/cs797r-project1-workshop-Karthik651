@@ -8,6 +8,7 @@ public partial class MonkeysViewModel : BaseViewModel
     MonkeyService monkeyService;
     IConnectivity connectivity;
     IGeolocation geolocation;
+
     public MonkeysViewModel(MonkeyService monkeyService, IConnectivity connectivity, IGeolocation geolocation)
     {
         Title = "Monkey Finder";
@@ -15,7 +16,10 @@ public partial class MonkeysViewModel : BaseViewModel
         this.connectivity = connectivity;
         this.geolocation = geolocation;
     }
-    
+
+    [ObservableProperty]
+    bool isRefreshing;
+
     [RelayCommand]
     async Task GoToDetails(Monkey monkey)
     {
@@ -61,6 +65,7 @@ public partial class MonkeysViewModel : BaseViewModel
         finally
         {
             IsBusy = false;
+            IsRefreshing = false;
         }
 
     }
