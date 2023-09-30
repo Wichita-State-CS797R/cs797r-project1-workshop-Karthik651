@@ -21,3 +21,7 @@
 ### Part 5
 
 ![](./screenshots/five.png)
+
+### Part 6
+
+![](./screenshots/six.png)
