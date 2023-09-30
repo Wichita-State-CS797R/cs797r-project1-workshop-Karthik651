@@ -34,10 +34,8 @@ public partial class MonkeysViewModel : BaseViewModel
     {
         if (IsBusy || Monkeys.Count == 0)
             return;
-
         try
         {
-            // Get cached location, else get real location.
             var location = await geolocation.GetLastKnownLocationAsync();
             if (location == null)
             {
@@ -47,15 +45,12 @@ public partial class MonkeysViewModel : BaseViewModel
                     Timeout = TimeSpan.FromSeconds(30)
                 });
             }
-
-            // Find closest monkey to us
             var first = Monkeys.OrderBy(m => location.CalculateDistance(
                 new Location(m.Latitude, m.Longitude), DistanceUnits.Miles))
                 .FirstOrDefault();
 
             await Shell.Current.DisplayAlert("", first.Name + " " +
                 first.Location, "OK");
-
         }
         catch (Exception ex)
         {
